@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="topo"></header><br>
+    <h1 id="playText"> JOGO DA VELHA</h1>
+    <section class="btn">
+        <button id="restartBtn" class="botao restart" onclick="restart()">Restart</button><br>
+        <button class="botao" onclick="jogarPc()"><a style="text-decoration: none; " href="indexPlayerOne.html">Jogar com a máquina</a></button><br>
+        <button class="botao" onclick="relog()">Reiniciar</button>
+    </section>
+    <main class="main">
+        <div class="div div1" id="0"></div>
+        <div class="div div2" id="1"></div>
+        <div class="div div3" id="2"></div>
+        <div class="div div4" id="3"></div>
+        <div class="div div5" id="4"></div>
+        <div class="div div6" id="5"></div>
+        <div class="div div7" id="6"></div>
+        <div class="div div8" id="7"></div>
+        <div class="div div9" id="8"></div>
+    </main>
+    <div class="conteine-placar">
+        <p class="placar placar-x">x-<span id="x-points">0</span></p> VS
+        <p class="placar placar-o">o-<span id="o-points">0</span></p>
+    </div>
+    <footer class="rodape">
+       <div class="pe">Desenvolvido por Welliton</div> 
+    </footer>
+    <script src="index.js"></script>
+</body>
+
+</html>

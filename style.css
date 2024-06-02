@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+   
+}
+
+body{
+    background-color:#808080 ;
+}
+
+.topo {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+#playText {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn {
+    display: grid;
+    justify-content: center;
+    padding: 10px;
+}
+
+a, .botao {
+    border-radius: 10px;
+    padding: 10px;
+    color: black;
+}
+
+a:hover, .botao:hover{
+    background-color: black;
+    color: white;
+}
+.main {
+    border-radius: 10px;
+    display: grid;
+    margin: 0 auto;
+    grid-template-columns: repeat(3, 1fr);
+    /*alinha colunas*/
+    gap: 0px;
+    /*espaço entre as céçulas*/
+    border: 2px solid black;
+    padding: 5px;
+    width: 500px;
+    /*tamanho da velha kkk*/
+}
+
+.div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    height: 100px;
+    text-align: center;
+}
+
+.conteine-placar {
+    margin-top: 50px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.placar {
+    margin: 0 10px;
+}
+
+.rodape {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: black;
+}
+
+.pe {
+    color: white;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+    /* coloca um espaçamento interno*/
+}
+
+/* Remover bordas específicas para fazer parecer um jogo da velha */
+.div:nth-child(3n) {
+    border-right: none;
+    /* Remove a borda direita a cada 3 células */
+}
+
+.div:nth-child(3n+1) {
+    border-left: none;
+    /* Remove a borda esquerda a cada 3 células, começando da primeira */
+}
+
+.div:nth-child(-n+3) {
+    border-top: none;
+    /* Remove a borda superior das primeiras 3 células */
+}
+
+.div:nth-last-child(-n+3) {
+    border-bottom: none;
+    /* Remove a borda inferior das últimas 3 células */
+}
+
+:root {
+    --blue: #0099ff;
+    --winning-blocks: #b9009a;
+}
+
+#difficulty-board {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+#difficulty-board select {
+    padding: 5px 20px;
+    font-weight: bold;
+    font-size: 1rem;
+    margin-left: 10px;
+}
+
+.x {
+    color:#040b31; /* Cor para X */
+}
+
+.o {
+    color:  #ff8c00; /* Cor para O */
+}
